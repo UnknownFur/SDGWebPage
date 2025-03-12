@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/HeadNFoot.css">
+    <link rel="stylesheet" href="../CSS/PrincipalStyle.css">
+    <title>Fake Claws</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo" id="menuToggle">
+                <div class="animation">
+                    <img src="../Images/Logo.jpg" alt="">
+                </div>
+            </div>
+            <div class="options" id="navOptions">
+                <a href="../../WorkingPage.html"><h1>Art</h1></a>
+                <a href="../../WorkingPage.html"><h1>History</h1></a>
+                <a href="../../WorkingPage.html"><h1>Comic</h1></a>
+                <a href="../../Pagina SDG/HTML/Principal.html"><h1>Esp</h1></a>
+                <div class="rectangle-1"></div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="content-head">
+            <div class="info1">
+                <img src="../Images/Principal_Img1.jpg" alt="">
+            </div>
+            <div class="info2">
+                <div class="info2-1">
+                    <h3>Fake Claws</h3>
+                </div>
+                <P id="toggleTitle">(click here)</P>
+                <div class="info2-2" id="toggleContent">
+                    <p>Michael Peter Harvey has made running away from love an extreme sport… and so far, he’s always won. Meanwhile, Sarah Rommel, the new girl with more strength than patience, crashes into his life like a meteorite without brakes. Romance? Maybe. Trouble? Definitely. Get ready for a romantic comedy packed with ridiculously epic street fights, inter-species prejudices, and a whirlwind of emotional tensions as frustrating as they are addictive. Ready to feel the anti-climatic situations?</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+
+    </section>
+    <footer>
+        <div class="end-footer">
+            <h2>© 2025 by DREAMTEAM</h2>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let title = document.getElementById("toggleTitle");
+            let content = document.getElementById("toggleContent");
+    
+            title.addEventListener("click", function () {
+                content.classList.toggle("show");
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let menuToggle = document.getElementById("menuToggle");
+            let navOptions = document.getElementById("navOptions");
+    
+            menuToggle.addEventListener("click", function () {
+                navOptions.classList.toggle("show");
+            });
+        });
+    </script>    
+</body>
+</html>

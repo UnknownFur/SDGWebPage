@@ -95,7 +95,6 @@ a:hover{
 footer{
     position: relative;
     width: fit-content;
-    top: -10px; 
     margin-bottom: -10px;
     transition: 0.2s;
 }
@@ -103,4 +102,40 @@ footer:hover{
     transform: scale(1.2);
     transform-origin: left;
     transition: 0.2s;
+}
+@media only screen and (max-width: 500px) {
+    .options {
+        max-height: 0;
+        width: 10vh;
+        justify-self: center;
+        z-index: 1;
+        overflow: hidden;
+        flex-direction: column-reverse;
+        background-color: rgb(168, 20, 44);
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        right: 10px;
+        border-radius: 60px;
+        padding: 0; /* Se ajustará dinámicamente */
+        text-align: center;
+        border: double white 10px;
+        transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    }
+    
+    .options.show {
+        max-height: 500px; /* Ajusta según el contenido */
+        padding: 10px;
+    }
+
+    .logo {
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .nav-bar {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        justify-content: center;
+    }
 }

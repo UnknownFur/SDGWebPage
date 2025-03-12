@@ -10,12 +10,12 @@
 <body>
     <nav>
         <div class="nav-bar">
-            <div class="logo">
+            <div class="logo" id="menuToggle">
                 <div class="animation">
                     <img src="../Images/Logo.jpg" alt="">
                 </div>
             </div>
-            <div class="options">
+            <div class="options" id="navOptions">
                 <a href="../../WorkingPage.html"><h1>Art</h1></a>
                 <a href="../../WorkingPage.html"><h1>History</h1></a>
                 <a href="../../WorkingPage.html"><h1>Comic</h1></a>
@@ -58,7 +58,15 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let menuToggle = document.getElementById("menuToggle");
+            let navOptions = document.getElementById("navOptions");
     
-    
+            menuToggle.addEventListener("click", function () {
+                navOptions.classList.toggle("show");
+            });
+        });
+    </script>    
 </body>
 </html>

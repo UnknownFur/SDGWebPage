@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/HeadNFoot.css">
     <link rel="stylesheet" href="../CSS/PrincipalStyle.css">
-    <title>Se Dieron Garra</title>
+    <title>Fake Claws</title>
 </head>
 <body>
     <nav>
         <div class="nav-bar">
-            <div class="logo">
+            <div class="logo" id="menuToggle">
                 <div class="animation">
                     <img src="../Images/Logo.jpg" alt="">
                 </div>
             </div>
-            <div class="options">
+            <div class="options" id="navOptions">
                 <a href="../../PaginaTrabajo.html"><h1>Arte</h1></a>
                 <a href="../../PaginaTrabajo.html"><h1>Historia</h1></a>
                 <a href="../../PaginaTrabajo.html"><h1>Comic</h1></a>
@@ -58,7 +58,15 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let menuToggle = document.getElementById("menuToggle");
+            let navOptions = document.getElementById("navOptions");
     
-    
+            menuToggle.addEventListener("click", function () {
+                navOptions.classList.toggle("show");
+            });
+        });
+    </script>    
 </body>
 </html>

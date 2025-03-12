@@ -123,7 +123,7 @@ h3{
         margin: 0;
     }
 }
-@media only screen and (min-width: 0px) and (max-width: 330px){
+@media only screen and (min-width: 0px) and (max-width: 380px){
     body{
         background-size: cover;
     }

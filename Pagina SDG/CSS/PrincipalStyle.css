@@ -124,6 +124,9 @@ h3{
     }
 }
 @media only screen and (min-width: 0px) and (max-width: 330px){
+    body{
+        background-size: cover;
+    }
     .content-head{
         flex-direction: column;
         align-items: center;
